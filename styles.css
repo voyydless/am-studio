@@ -16,7 +16,7 @@ body {
     background-color: var(--white);
     color: var(--blue);
     margin: 80px auto 40px auto;
-    max-width: 1200px;
+    max-width: 1248px;
 }
 
 header {
@@ -165,4 +165,203 @@ footer {
 
 footer a {
   margin: 0px 16px 0 16px;
+}
+
+@media (max-width: 1248px) {
+  body {
+    width: auto;
+    margin: 80px 64px 48px 64px;
+  }
+}
+
+@media (max-width: 920px) {
+    .about, .contact {
+        margin: 32px 0;
+        gap: 16px;
+    }
+    
+    header {
+    flex-direction: column;
+    }
+
+    nav {
+    margin: 24px 0 0 0;
+    }
+
+    header img {
+    max-width: 300px;
+    }
+
+    header a {
+    margin: 0 16px 0 16px;
+    }
+
+    .description h2,
+    .description p {
+        margin: 0;
+        width: auto;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        grid-column: 1 / span 4;
+        width: auto;
+    }
+
+    .about .description {
+        order: 1;
+        text-align: justify;
+    }
+
+    .about .description p {
+        margin-bottom: 16px;
+    }
+
+    .about .illustration {
+        order: 2;
+    }
+
+    .about .illustration img {
+        margin-top: 40px;
+        max-height: 300px;
+    }
+}
+
+@media (max-width: 660px) {
+    body {
+        margin: 40px 36px;
+        max-width: 100%;
+    }
+
+    nav a {
+        margin: 8px 16px;
+        font-size: 20px;
+    }
+
+    section {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+        width: 100%;
+    }
+
+    section h1 {
+        grid-column: 1 / span 4;
+        font-size: 24px;
+        text-align: center;
+        margin: 0;
+        width: auto;
+    }
+
+    .project {
+        grid-column: 1 / span 4;
+        width: auto;
+        margin-bottom: 24px;
+        margin-top: 24px;
+    }
+
+    .artwork, 
+    .description {
+        width: auto;
+    }
+
+    .description h2 {
+        font-size: 20px;
+    }
+
+    .description h2,
+    .description p {
+        margin: 0;
+        width: auto;
+    }
+
+    .contact{
+        grid-column: 1 / span 4;
+        width: auto;
+        margin: 40px 16px;
+    }
+
+    .contact form {
+        margin: 40px 0 40px 0;
+        width: 100%;
+    }
+
+    input, textarea, button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    button {
+        padding: 12px 24px 8px 24px;
+        margin-top: 16px;
+    }
+
+    footer {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        margin: 24px;
+    }
+
+    section, .about, .contact{
+        margin: 32px 0;
+        gap: 16px;
+    }
+
+    header img {
+        width: 100%;
+    }
+
+    section h1 {
+        font-size: 20px;
+    }
+
+    .project {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 16px;
+        margin-top: 16px;
+    }
+
+    .artwork {
+        order: 1;
+        width: 100%;
+    }
+
+    .description {
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 4px;
+    }
+
+    .description h2 {
+        margin: 8px 0 0 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .description p {
+        font-size: 14px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .about p{
+        font-size: 14px;
+        text-align: left;
+        width: 100%;
+    }
+
+    .contact form {
+        margin: 24px 0;
+    }
+
+    footer img{
+        max-height: 32px;
+    }
 }
